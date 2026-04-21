@@ -81,9 +81,14 @@ export default function AboutUsPage() {
       <header className="sticky top-0 z-20 border-b border-[#cfe5dc] bg-white/90 backdrop-blur-xl">
         <nav className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between gap-4 px-6 lg:px-10">
           <Link href="/" className="flex items-center gap-3">
-            <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#01573c] to-[#01432f] text-lg font-semibold text-white shadow-md shadow-[#01573c]/20">
-              MF
-            </span>
+            <Image
+              src="/mfnow.png"
+              alt="MFNOW logo"
+              width={40}
+              height={40}
+              className="h-10 w-10 rounded-xl bg-white object-contain p-1 shadow-md shadow-[#01573c]/20"
+              priority
+            />
             <span className="rounded-md bg-[#01573c] px-2 py-1 text-xs font-semibold tracking-wide text-white">
               Grow
             </span>

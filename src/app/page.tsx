@@ -5,17 +5,17 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-[#f2f9f6]">
       <header className="sticky top-0 z-20 border-b border-[#cfe5dc] bg-white/90 backdrop-blur-xl">
-        <nav className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between gap-4 px-6 lg:px-10">
+        <nav className="mx-auto flex h-28 w-full max-w-7xl items-center justify-between gap-4 px-6 lg:px-10">
           <Link href="/" className="flex items-center gap-3">
-            <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#01573c] to-[#01432f] text-lg font-semibold text-white shadow-md shadow-[#01573c]/20">
-              MF
-            </span>
-            <span className="rounded-md bg-[#01573c] px-2 py-1 text-xs font-semibold tracking-wide text-white">
-              Grow
-            </span>
-            <span className="text-xl font-semibold tracking-tight text-zinc-900">
-              MFGrow
-            </span>
+            <Image
+              src="/mfnow.png"
+              alt="MFNOW logo"
+                  width={240}
+                  height={200}
+              className=" w-[200px] rounded-xl bg-white object-cover p-1 "
+              priority
+            />
+            
           </Link>
 
           <div className="hidden items-center rounded-full border border-[#d7e9e2] bg-white/80 p-1 text-sm font-medium text-zinc-600 shadow-sm lg:flex">
@@ -858,9 +858,13 @@ export default function Home() {
           <div className="mt-10 grid gap-6 lg:grid-cols-[1.2fr_1.8fr]">
             <div className="rounded-2xl border border-[#1f4f3e] bg-white/5 p-6 backdrop-blur-sm">
               <div className="flex items-center gap-3">
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#10a06d] to-[#0a6f4c] text-sm font-semibold text-white shadow-md shadow-[#0b5f43]/30">
-                  MF
-                </span>
+                <Image
+                  src="/mfnow.png"
+                  alt="MFNOW logo"
+                  width={40}
+                  height={40}
+                  className="h-10 w-10 rounded-xl bg-white object-contain p-1 shadow-md shadow-[#0b5f43]/30"
+                />
                 <span className="text-xl font-semibold tracking-tight text-white">
                   MFNOW
                 </span>
