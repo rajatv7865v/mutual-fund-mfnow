@@ -19,7 +19,7 @@ export default function Home() {
           </Link>
 
           <div className="hidden items-center rounded-full border border-[#d7e9e2] bg-white/80 p-1 text-sm font-medium text-zinc-600 shadow-sm lg:flex">
-            <a className="rounded-full px-4 py-2 transition-colors hover:bg-[#e8f4ef] hover:text-[#01573c]" href="#">
+            <a className="rounded-full px-4 py-2 transition-colors hover:bg-[#e8f4ef] hover:text-[#01573c]" href="/">
               Mutual Funds
             </a>
             <a
@@ -69,7 +69,7 @@ export default function Home() {
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-8 text-zinc-600">
             Start SIPs, discover top-performing funds, and track every goal in
-            one beautiful dashboard with MFGrow.
+            one beautiful dashboard with MFNow.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -502,13 +502,13 @@ export default function Home() {
         <div className="rounded-3xl border border-[#d7e9e2] bg-white/90 p-7 shadow-lg shadow-[#01573c]/10 sm:p-10">
           <div className="max-w-3xl">
             <span className="inline-flex items-center rounded-full border border-[#b8d9cc] bg-[#e8f4ef] px-4 py-1 text-xs font-semibold uppercase tracking-wide text-[#01573c]">
-              Why Choose MFGrow
+              Why Choose MFNow
             </span>
             <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-900 sm:text-3xl">
               A complete platform for long-term wealth building
             </h2>
             <p className="mt-3 text-sm leading-7 text-zinc-600 sm:text-base">
-              From discovery to execution and review, MFGrow helps you invest with confidence through simple tools and transparent insights.
+              From discovery to execution and review, MFNow helps you invest with confidence through simple tools and transparent insights.
             </p>
           </div>
 

@@ -42,62 +42,58 @@ export default function SipCalculatorPage() {
 
   return (
     <div className="min-h-screen bg-[#f2f9f6]">
-      <header className="sticky top-0 z-20 border-b border-[#cfe5dc] bg-white/90 backdrop-blur-xl">
-        <nav className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between gap-4 px-6 lg:px-10">
+       <header className="sticky top-0 z-20 border-b border-[#cfe5dc] bg-white/90 backdrop-blur-xl">
+        <nav className="mx-auto flex h-28 w-full max-w-7xl items-center justify-between gap-4 px-6 lg:px-10">
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/mfnow.png"
               alt="MFNOW logo"
-              width={40}
-              height={40}
-              className="h-10 w-10 rounded-xl bg-white object-contain p-1 shadow-md shadow-[#01573c]/20"
+                  width={240}
+                  height={200}
+              className=" w-[200px] rounded-xl bg-white object-cover p-1 "
               priority
             />
-            <span className="rounded-md bg-[#01573c] px-2 py-1 text-xs font-semibold tracking-wide text-white">
-              Grow
-            </span>
-            <span className="text-xl font-semibold tracking-tight text-zinc-900">
-              MFGrow
-            </span>
+            
           </Link>
+
           <div className="hidden items-center rounded-full border border-[#d7e9e2] bg-white/80 p-1 text-sm font-medium text-zinc-600 shadow-sm lg:flex">
-            <Link
-              href="/"
+            <a className="rounded-full px-4 py-2 transition-colors hover:bg-[#e8f4ef] hover:text-[#01573c]" href="/">
+              Mutual Funds
+            </a>
+            <a
               className="rounded-full px-4 py-2 transition-colors hover:bg-[#e8f4ef] hover:text-[#01573c]"
-            >
-              Home
-            </Link>
-            <Link
               href="/sip-calculator"
-              className="rounded-full bg-[#e8f4ef] px-4 py-2 text-[#01573c]"
             >
               SIP Calculator
-            </Link>
+            </a>
             <Link
-              href="/market-insights"
               className="rounded-full px-4 py-2 transition-colors hover:bg-[#e8f4ef] hover:text-[#01573c]"
+              href="/market-insights"
             >
               Market Insights
             </Link>
             <Link
-              href="/about-us"
               className="rounded-full px-4 py-2 transition-colors hover:bg-[#e8f4ef] hover:text-[#01573c]"
+              href="/about-us"
             >
               About Us
             </Link>
             <Link
-              href="/contact-us"
               className="rounded-full px-4 py-2 transition-colors hover:bg-[#e8f4ef] hover:text-[#01573c]"
+              href="/contact-us"
             >
               Contact Us
             </Link>
           </div>
-          <Link
-            href="/"
-            className="rounded-lg bg-gradient-to-r from-[#01573c] to-[#01432f] px-4 py-2 text-sm font-medium text-white shadow-md shadow-[#01573c]/20 transition-all hover:from-[#014d35] hover:to-[#013827] md:px-5"
-          >
-            Back to Home
-          </Link>
+
+          <div className="flex items-center gap-3">
+            <div className="hidden items-center rounded-full border border-[#cfe5dc] bg-[#e8f4ef] px-3 py-2 text-xs font-medium text-[#01573c] xl:flex">
+              Live NAV tracking
+            </div>
+            <button className="rounded-lg bg-gradient-to-r from-[#01573c] to-[#01432f] px-4 py-2 text-sm font-medium text-white shadow-md shadow-[#01573c]/20 transition-all hover:from-[#014d35] hover:to-[#013827]">
+              Get Started
+            </button>
+          </div>
         </nav>
       </header>
 
